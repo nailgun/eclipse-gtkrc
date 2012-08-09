@@ -1,0 +1,6 @@
+#!/bin/bash
+
+myPATH="$(dirname $0)"
+PATH=${PATH/$myPATH/}
+eclipse=$(which eclipse)
+GTK2_RC_FILES=$HOME/.themes/clearlooks.gtkrc exec $eclipse
